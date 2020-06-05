@@ -6,5 +6,5 @@ namespace EcomDev\AwesomeLayeredNavigation\Api;
 
 interface Request
 {
-    public function apply(RequestProcessor $processor): void;
+    public function apply(RequestHandler $processor): void;
 }
