@@ -1,0 +1,24 @@
+{
+    "name": "ecomdev/awesome-layered-navigation",
+    "description": "Awesome Layered Navigation for Magento 2",
+    "type": "library",
+    "require": {
+        "php": "~7.3|~7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "EcomDev\\AwesomeLayeredNavigation\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ivan Chepurnyi",
+            "email": "ivan.chepurnyi@ecomdev.org"
+        }
+    ],
+    "minimum-stability": "stable"
+}
