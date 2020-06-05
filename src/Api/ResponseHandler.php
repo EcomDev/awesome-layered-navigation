@@ -3,7 +3,18 @@
 
 namespace EcomDev\AwesomeLayeredNavigation\Api;
 
-interface ResponseProcessor
+interface ResponseHandler
 {
-    public function addFacet(string $filter, Facet $facet): void;
+    const FACET_OPTION = 'options';
+    const FACET_RANGE = 'range';
+
+    public function renderFacet(string $fieldName, string $dataType, array $data): void;
+
+    public function renderSortOrder(string $fieldName): void;
+
+    public function renderTotal(int $totalRecords): void;
+
+    public function renderPagination(int $pageSize, int $currentPage, int ...$pageSizes): void;
+
+    public function renderProducts(int ...$productIds): void;
 }
